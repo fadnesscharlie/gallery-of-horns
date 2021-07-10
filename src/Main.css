@@ -1,0 +1,18 @@
+section {
+  border: red 4px solid;
+  margin: 30px;
+}
+
+img {
+  height: 300px;
+  border: black 2px solid;
+}
+
+p {
+  font-style: italic;
+}
+
+section>p:first-child {
+  font-size: 2em;
+  /* border: black 2px solid; */
+}
