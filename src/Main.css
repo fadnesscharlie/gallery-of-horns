@@ -1,6 +1,9 @@
 section {
   border: red 4px solid;
-  margin: 30px;
+  width: max-content;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 img {

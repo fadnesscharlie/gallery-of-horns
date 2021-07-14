@@ -1,9 +1,29 @@
-# Gallery Of Horns
+# LAB - 02
 
-## Welcome to our Gallery
+## Gallery Of Horns
 
-In here you will be shown some pictures of horns. Some of these represent more just the eye.
+I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
 
-With a title and a brief description, you will understand what the images representing
+### Author: Student/Group Name
 
-Today we have three images to show
+### Links and Resources
+
+- submission PR
+- Any Links you used as reference
+
+### Reflections and Comments
+
+- Consider including the answers to your daily journal and submission questions here
+- This is also a good place to reflect on the tools and resources used and learned
+
+
+
+Number and name of feature: ________________________________
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
