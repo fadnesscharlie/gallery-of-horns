@@ -10,15 +10,15 @@ with a direct and powerful purpose. It does all of the things that it accomplish
 
 ### Links and Resources
 
-- submission PR
-- Any Links you used as reference
+- [Sumbission PR](https://github.com/fadnesscharlie/gallery-of-horns/pull/3)
+- [BootStrap Card References](https://react-bootstrap.github.io/components/cards/)
 
 ### Reflections and Comments
 
-- Consider including the answers to your daily journal and submission questions here
-- This is also a good place to reflect on the tools and resources used and learned
+- From today, I learned that sometimes, even on a fresh day, its best to read over the errors and spend more time looking to make sure all the words are correct, as a misspelled word can sometimes not provide an error.
+- This project was tough, there were many new aspects that we learned and a lot of new things we were not used to. We even had an issue with the version of BootStrap which did not make our CardColumns work, to fix this, we had to decrease the version number back to the correct one that we knew that works
 
-Number and name of feature: Feature #1: Display images
+### Number and name of feature: Feature #1: Display images
 
 Estimate of time needed to complete: Most of this was easy and I was able to follow along, using the forEach through the array was the most difficult, I had an error in spelling that I did not catch and i put it in a function which was just adding more problems.
 
@@ -28,7 +28,7 @@ Finish time: 7/14/2021 6:30pm
 
 Actual time needed to complete: End of Class 2
 
-Number and name of feature: Feature #2: Allow users to vote for their favorite beast
+### Number and name of feature: Feature #2: Allow users to vote for their favorite beast
 
 Estimate of time needed to complete: One Hour
 
@@ -38,7 +38,7 @@ Finish time: 7/13/2021 9:30pm
 
 Actual time needed to complete: End of Class 2
 
-Number and name of feature: Feature 3: Bootstrap
+### Number and name of feature: Feature 3: Bootstrap
 
 Estimate of time needed to complete: 2 Hours
 
