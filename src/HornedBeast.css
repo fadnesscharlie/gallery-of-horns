@@ -1,0 +1,18 @@
+/* .cards {
+  width: 300px;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  height: 600px;
+} */
+
+#renderedBeast {
+  /* display: inline-block; */
+  
+}
+
+/* .cards:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
