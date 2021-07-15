@@ -1,14 +1,13 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import './HornedBeast.css';
-// I think this works?
 import Card from 'react-bootstrap/Card';
 
 class Section extends React.Component {
 
   // how we can apply state
   // grab it by 'this.state.numberOnHand'
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       numberOnHand: 0,
@@ -21,6 +20,7 @@ class Section extends React.Component {
   addOne = () => {
     this.setState({
       numberOnHand: this.state.numberOnHand + 1,
+      
     })
   }
   // Call this method 'this.addOne'
@@ -35,28 +35,35 @@ class Section extends React.Component {
   favorite = () => {
     this.setState({
       showFavorite: true,
+      numberOnHand: this.state.numberOnHand + 1,
     })
   }
 
   render() {
     return (
       <section>
-        {/* <CardColumns> */}
         <Card className="cards">
-        <p>{this.props.title}</p>
-        <Card.Img variant="top"
-          src={this.props.imageURL}
-          alt={this.props.description}
-        />
-        <p>Keyword {this.props.keyword}</p>
-        <p>{this.props.horns} Horn(s)</p>
-        <p>{this.state.numberOnHand} Available</p>
-        <p>{this.state.showFavorite ? '💖' : ''}</p>
-        <p onClick={this.favorite}>{this.props.description}</p>
-        <Button variant="outline-success" onClick={this.addOne}>Add One</Button>
-        <Button variant="outline-danger" onClick={this.useOne}>Use One</Button>
+          <p>{this.props.title}</p>
+          <Card.Img
+            variant="top"
+            onClick={() => {
+              this.favorite()
+              this.addOne()
+              }
+            }
+            src={this.props.imageURL}
+            alt={this.props.description}
+          />
+          <Card.Body>
+            <p>Keyword {this.props.keyword}</p>
+            <p>{this.props.horns} Horn(s)</p>
+            <p>{this.state.numberOnHand} Likes
+            {this.state.showFavorite ? '💖' : ''}</p>
+            <p>{this.props.description}</p>
+          </Card.Body>
+          {/* <Button variant="outline-success" onClick={this.addOne}>Add One</Button>
+          <Button variant="outline-danger" onClick={this.useOne}>Use One</Button> */}
         </Card>
-        {/* </CardColumns> */}
       </section>
     )
   }
