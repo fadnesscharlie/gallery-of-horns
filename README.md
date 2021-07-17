@@ -47,3 +47,15 @@ Start time: 7/13/2021 9:30pm
 Finish time: 7/14/2021 10:30pm
 
 Actual time needed to complete: End of Class 2
+
+## Lab 03
+
+Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 1:43pm
+
+Finish time: _____
+
+Actual time needed to complete: _____
