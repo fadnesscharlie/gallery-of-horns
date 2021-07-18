@@ -55,7 +55,7 @@ class Section extends React.Component {
               this.setSelectedBeast2();
               }
             }
-            src={this.props.imageURL}
+            src={this.props.imageUrl} // Render Card Image
             alt={this.props.description}
           />
           <Card.Body>

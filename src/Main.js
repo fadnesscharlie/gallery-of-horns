@@ -30,7 +30,7 @@ class Main extends React.Component {
       handleWalletProperty={this.manageWallet}
       key={idx}
       title={item.title}
-      imageURL={item.image_url}
+      imageUrl={item.image_url}
       description={item.description}
       keyword={item.keyword}
       horns={item.horns}
@@ -49,10 +49,10 @@ class Main extends React.Component {
           </CardColumns>
         </article>
         <SelectedBeast 
-        setSelectedBeast={this.props.setSelectedBeast}
+        // setSelectedBeast={this.props.setSelectedBeast}
         showModal2={this.props.showModal2}
         hideModal2={this.props.handleHideModal} 
-        imageURL={this.props.image_url} 
+        // imageURL={this.props.image_url} 
         />
       </main>
     )
