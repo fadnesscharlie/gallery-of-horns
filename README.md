@@ -8,6 +8,12 @@ with a direct and powerful purpose. It does all of the things that it accomplish
 
 ### Author: Charlie Fadness
 
+### Collaborators
+
+- Quentin Young
+- Alex Payne
+- TA
+
 ### Links and Resources
 
 - [Sumbission PR](https://github.com/fadnesscharlie/gallery-of-horns/pull/3)
@@ -17,6 +23,8 @@ with a direct and powerful purpose. It does all of the things that it accomplish
 
 - From today, I learned that sometimes, even on a fresh day, its best to read over the errors and spend more time looking to make sure all the words are correct, as a misspelled word can sometimes not provide an error.
 - This project was tough, there were many new aspects that we learned and a lot of new things we were not used to. We even had an issue with the version of BootStrap which did not make our CardColumns work, to fix this, we had to decrease the version number back to the correct one that we knew that works
+
+## Lab 02
 
 ### Number and name of feature: Feature #1: Display images
 
@@ -56,6 +64,6 @@ Estimate of time needed to complete: 3 hours
 
 Start time: 1:43pm
 
-Finish time: _____
+Finish time: 5:30pc
 
-Actual time needed to complete: _____
+Actual time needed to complete: 5 hours
