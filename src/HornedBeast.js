@@ -3,7 +3,6 @@ import './HornedBeast.css';
 import Card from 'react-bootstrap/Card';
 
 class Section extends React.Component {
-
   // how we can apply state
   // grab it by 'this.state.numberOnHand'
   constructor(props) {
@@ -19,9 +18,9 @@ class Section extends React.Component {
   addOne = () => {
     this.setState({
       numberOnHand: this.state.numberOnHand + 1,
-      
     })
-  }
+    this.props.handleWalletProperty(this.props.horns)
+  };
   // Call this method 'this.addOne'
 
   useOne = () => {
@@ -38,6 +37,10 @@ class Section extends React.Component {
     })
   }
 
+  setSelectedBeast2 = () => {
+    this.props.setSelectedBeast(this.props.title, this.props.description, this.props.imageUrl)
+  };
+
   render() {
     return (
       <section>
@@ -48,16 +51,18 @@ class Section extends React.Component {
             onClick={() => {
               this.favorite()
               this.addOne()
+              // this.props.handleShowModal(this.props.title)// HINT HINT~~~
+              this.setSelectedBeast2();
               }
             }
-            src={this.props.imageURL}
+            src={this.props.imageUrl} // Render Card Image
             alt={this.props.description}
           />
           <Card.Body>
             <p>Keyword {this.props.keyword}</p>
             <p>{this.props.horns} Horn(s)</p>
             <p>{this.state.numberOnHand} Likes
-            {this.state.showFavorite ? '💖' : ''}</p>
+              {this.state.showFavorite ? '💖' : ''}</p>
             <p>{this.props.description}</p>
           </Card.Body>
           {/* <Button variant="outline-success" onClick={this.addOne}>Add One</Button>
