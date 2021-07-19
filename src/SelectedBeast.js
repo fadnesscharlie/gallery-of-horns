@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button'
+// import Button from 'react-bootstrap/Button'
 import './SelectedBeast.css';
 
 // import Image from 'react-bootstrap/Image';
@@ -33,6 +33,8 @@ class SelectedBeast extends React.Component {
     return (
       <>
         <Modal
+          // show={this.props.showModal2}
+          // onHide={this.props.handleHideModal}
           show={this.props.showModal2}
           onHide={this.props.hideModal2}>
           <Modal.Header closeButton>
@@ -44,6 +46,7 @@ class SelectedBeast extends React.Component {
               src={this.props.imageUrl}
               alt='.'
             />
+            <p>{this.props.description}</p>
           </Modal.Body>
         </Modal>
       </>

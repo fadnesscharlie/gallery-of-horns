@@ -67,3 +67,5 @@ Start time: 1:43pm
 Finish time: 5:30pc
 
 Actual time needed to complete: 5 hours
+
+Summary: This lab was very difficult, and showed that understanding the props and states with the child and parents are very valuable, but very difficult.
