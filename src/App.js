@@ -16,19 +16,16 @@ class App extends React.Component {
         title: '',
         desciption: '',
         imageUrl: '',
-
-      } //might use
+      }
     }
   }
+  
   handleShowModal = () => {
-    // let titleImg;
-    // let titleImg = data.filter(title => titleImg)
     this.setState({
       showModal: true,
-      // imageUrl: titleImg = data.map(title => titleImg),
-    })
-    // make a filter/map that goes through the array to find the matching title/conditon, then take 'that' object and pass it into the modal 
+    }) 
   };
+
   setSelectedBeast = (title, description, imageUrl) => {
     this.handleShowModal();
     this.setState({
@@ -58,7 +55,6 @@ class App extends React.Component {
         imageUrl={this.state.selectedBeast.imageUrl}
         description={this.state.selectedBeast.desciption}
         selectBeast={this.state.selectedBeast}
-        // imgObject2 = "titleImg"
         />
         <Main 
         data={data} 
@@ -66,8 +62,6 @@ class App extends React.Component {
         handleHideModal={this.handleHideModal} 
         showModal2={this.state.showModal} 
         setSelectedBeast = {this.setSelectedBeast}
-        
-        
         />
         <Footer />
       </>

@@ -1,15 +1,11 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
 import './Main.css';
-// import data from './data.json'
 import CardColumns from 'react-bootstrap/CardColumns'
-// import SelectedBeast from './SelectedBeast.js';
+
 
 
 class Main extends React.Component {
-
-  // how we can apply state
-  // grab it by 'this.state.variableName'
   constructor(props) {
     super(props);
     this.state = {
@@ -48,12 +44,6 @@ class Main extends React.Component {
             {renderedArrBeast}
           </CardColumns>
         </article>
-        {/* <SelectedBeast 
-        setSelectedBeast={this.props.setSelectedBeast}
-        showModal2={this.props.showModal2}
-        hideModal2={this.props.handleHideModal} 
-        imageURL={this.props.image_url} 
-        /> */}
       </main>
     )
   }
