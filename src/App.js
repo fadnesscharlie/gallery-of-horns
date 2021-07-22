@@ -54,7 +54,6 @@ class App extends React.Component {
       <>
         <Header />
         <SelectedBeast // States and pass down functions to SelectedBeast
-          // handleShowModal={this.handleShowModal} // Do not need to load
           handleHideModal={this.handleHideModal}
           showModal={this.state.showModal}
           title={this.state.selectedBeast.title}
@@ -65,7 +64,6 @@ class App extends React.Component {
         <Main // Updates state and passes down functions to Main
           data={data} // pass data.json file to main
           handleShowModal={this.handleShowModal} // 
-          // handleHideModal={this.handleHideModal} // Do not need to load
           showModal={this.state.showModal}
           setSelectedBeast={this.setSelectedBeast} // 
         />
