@@ -1,7 +1,8 @@
 #modalImage {
   /* width: auto; */
   /* max-width: max-content; */
-  width: 450px;
+  /* width: 450px; */
+  width: 100%;
   /* height: 200px; */
   /* margin: auto; */
 }

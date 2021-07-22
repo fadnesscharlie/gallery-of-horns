@@ -6,37 +6,28 @@ class Section extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      numberOnHand: 0,
+      likes: 0,
       showFavorite: false,
       favNumber: 0,
     };
   }
 
-  addOne = () => {
-    this.setState({
-      numberOnHand: this.state.numberOnHand + 1,
-    })
-    this.props.handleWalletProperty(this.props.horns)
-  };
-
-  useOne = () => {
-    this.setState({
-      numberOnHand: this.state.numberOnHand - 1,
-    })
-  }
-
+  // Sets favorite to image and increases Likes by 1 everytime called
   favorite = () => {
     this.setState({
       showFavorite: true,
-      numberOnHand: this.state.numberOnHand + 1,
+      likes: this.state.likes + 1,
     })
+    this.props.handleWalletProperty(this.props.horns)
   }
 
+  // onclick runs function to reset/update state
   setSelectedBeast2 = () => {
     this.props.setSelectedBeast(this.props.title, this.props.description, this.props.imageUrl)
   };
 
   render() {
+     console.log(this.props);
     return (
       <section>
         <Card className="cards">
@@ -45,7 +36,6 @@ class Section extends React.Component {
             variant="top"
             onClick={() => {
               this.favorite()
-              this.addOne()
               this.setSelectedBeast2();
               }
             }
@@ -54,8 +44,8 @@ class Section extends React.Component {
           />
           <Card.Body>
             <p>Keyword {this.props.keyword}</p>
-            <p>{this.props.horns} Horn(s)</p>
-            <p>{this.state.numberOnHand} Likes
+            <p>{this.props.horns} Horn(s)</p> 
+            <p>{this.state.likes} Likes
               {this.state.showFavorite ? '💖' : ''}</p>
             <p>{this.props.description}</p>
           </Card.Body>

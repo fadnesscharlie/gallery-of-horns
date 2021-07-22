@@ -13,6 +13,7 @@ with a direct and powerful purpose. It does all of the things that it accomplish
 - Quentin Young
 - Alex Payne
 - TA
+  - Kristian Esvelt
 
 ### Links and Resources
 

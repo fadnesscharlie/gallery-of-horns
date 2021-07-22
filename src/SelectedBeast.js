@@ -13,19 +13,22 @@ class SelectedBeast extends React.Component {
   render() {
     return (
       <>
-        <Modal
-          show={this.props.showModal2}
-          onHide={this.props.hideModal2}>
+        <Modal 
+          // Show and Hide Modal, updates here to show or hide
+          show={this.props.showModal} // Hides Modal on load
+          onHide={this.props.handleHideModal}>
           <Modal.Header closeButton>
-            <Modal.Title>This is my Modal</Modal.Title>
+            <Modal.Title>
+              {/* Description of image */}
+              <p>{this.props.description}</p> 
+            </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img
+            <img // Image of Modal
               id='modalImage'
               src={this.props.imageUrl}
-              alt='.'
+              alt={this.props.description}
             />
-            <p>{this.props.description}</p>
           </Modal.Body>
         </Modal>
       </>
