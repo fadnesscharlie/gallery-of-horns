@@ -7,7 +7,7 @@ import data from './data.json';
 import SelectedBeast from './SelectedBeast.js';
 import './App.css';
 
-class App extends React.Component { 
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,19 +16,28 @@ class App extends React.Component {
         title: '',
         desciption: '',
         imageUrl: '',
-
-      } //might use
+      }
     }
   }
+
+  // Sets the state of Modal to True
   handleShowModal = () => {
-    // let titleImg;
-    // let titleImg = data.filter(title => titleImg)
     this.setState({
       showModal: true,
-      // imageUrl: titleImg = data.map(title => titleImg),
     })
-    // make a filter/map that goes through the array to find the matching title/conditon, then take 'that' object and pass it into the modal 
+    // how to search through the array and save the correct beast to the chosen beast
+    // needs a parameter in handleShowModal for the beast
+    // let beastVariable = data.find(beast => beast.title === parameter)
   };
+
+  // Sets the state of Modal to False
+  handleHideModal = () => {
+    this.setState({
+      showModal: false
+    })
+  }
+
+  // Resetting the state and calling the modal to show to link image with the image clicked
   setSelectedBeast = (title, description, imageUrl) => {
     this.handleShowModal();
     this.setState({
@@ -40,34 +49,23 @@ class App extends React.Component {
     })
   };
 
-  handleHideModal = () => {
-    this.setState({
-      showModal: false
-    })
-  }
-
   render() {
-    return(
+    return (
       <>
         <Header />
-        <SelectedBeast 
-        handleShowModal={this.handleShowModal} 
-        handleHideModal={this.handleHideModal} 
-        showModal2={this.state.showModal}
-        title={this.state.selectedBeast.title}
-        imageUrl={this.state.selectedBeast.imageUrl}
-        description={this.state.selectedBeast.desciption}
-        selectBeast={this.state.selectedBeast}
-        // imgObject2 = "titleImg"
+        <SelectedBeast // States and pass down functions to SelectedBeast
+          handleHideModal={this.handleHideModal}
+          showModal={this.state.showModal}
+          title={this.state.selectedBeast.title}
+          imageUrl={this.state.selectedBeast.imageUrl}
+          description={this.state.selectedBeast.description}
+          selectBeast={this.state.selectedBeast}
         />
-        <Main 
-        data={data} 
-        handleShowModal={this.handleShowModal} 
-        handleHideModal={this.handleHideModal} 
-        showModal2={this.state.showModal} 
-        setSelectedBeast = {this.setSelectedBeast}
-        
-        
+        <Main // Updates state and passes down functions to Main
+          data={data} // pass data.json file to main
+          handleShowModal={this.handleShowModal} // 
+          showModal={this.state.showModal}
+          setSelectedBeast={this.setSelectedBeast} // 
         />
         <Footer />
       </>

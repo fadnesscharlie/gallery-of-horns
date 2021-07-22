@@ -2,9 +2,13 @@
 
 ## Gallery Of Horns
 
-I build an app that allows the user to view different Horned Beast. They also can be interactive with the app and choose which Horned Beast they like as well as favorite the ones they like the most.
+I build an app that allows the user to view different Horned Beast.
 
-with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+- Once the user clicks on an image, it will pop up a bigger image of the image chosen.
+- At the same time:
+  - You will favorite the image
+  - Increase a like on the image
+  - Decrease your wallet by number of Horns the image has
 
 ### Author: Charlie Fadness
 
@@ -13,6 +17,7 @@ with a direct and powerful purpose. It does all of the things that it accomplish
 - Quentin Young
 - Alex Payne
 - TA
+  - Kristian Esvelt
 
 ### Links and Resources
 
@@ -23,6 +28,7 @@ with a direct and powerful purpose. It does all of the things that it accomplish
 
 - From today, I learned that sometimes, even on a fresh day, its best to read over the errors and spend more time looking to make sure all the words are correct, as a misspelled word can sometimes not provide an error.
 - This project was tough, there were many new aspects that we learned and a lot of new things we were not used to. We even had an issue with the version of BootStrap which did not make our CardColumns work, to fix this, we had to decrease the version number back to the correct one that we knew that works
+- After completing this App, I learned a lot more about React, switch your brain over from React and JavaScript is no easy task, but its interesting to be able to work through that.
 
 ## Lab 02
 
@@ -58,7 +64,7 @@ Actual time needed to complete: End of Class 2
 
 ## Lab 03
 
-Number and name of feature: Feature #1: Display a Modal
+### Number and name of feature: Feature #1: Display a Modal
 
 Estimate of time needed to complete: 3 hours
 
@@ -69,3 +75,17 @@ Finish time: 5:30pc
 Actual time needed to complete: 5 hours
 
 Summary: This lab was very difficult, and showed that understanding the props and states with the child and parents are very valuable, but very difficult.
+
+## Lab 04
+
+### Number and name of feature: Feature 1. Filter by Numbers of Horns
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 7/20/2021 8:30pm
+
+Finish time: 7/20/2021 8pm
+
+Actual time needed to complete: Around 4 hours
+
+Summary: I had a good idea of what to do, I tried to filtered out the array, once I got stuck I asked for some help from a TA, and he showed me that I did not need to make another function, but to filter through the array that we already have using a conditional to take back the certain number of horns the image has.

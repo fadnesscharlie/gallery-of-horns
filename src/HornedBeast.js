@@ -3,45 +3,31 @@ import './HornedBeast.css';
 import Card from 'react-bootstrap/Card';
 
 class Section extends React.Component {
-  // how we can apply state
-  // grab it by 'this.state.numberOnHand'
   constructor(props) {
     super(props);
     this.state = {
-      numberOnHand: 0,
+      likes: 0,
       showFavorite: false,
       favNumber: 0,
     };
   }
 
-  // button method
-  addOne = () => {
-    this.setState({
-      numberOnHand: this.state.numberOnHand + 1,
-    })
-    this.props.handleWalletProperty(this.props.horns)
-  };
-  // Call this method 'this.addOne'
-
-  useOne = () => {
-    this.setState({
-      numberOnHand: this.state.numberOnHand - 1,
-    })
-  }
-  // Call this method 'this.useOne'
-
+  // Sets favorite to image and increases Likes by 1 everytime called
   favorite = () => {
     this.setState({
       showFavorite: true,
-      numberOnHand: this.state.numberOnHand + 1,
+      likes: this.state.likes + 1,
     })
+    this.props.handleWalletProperty(this.props.horns)
   }
 
+  // onclick runs function to reset/update state
   setSelectedBeast2 = () => {
     this.props.setSelectedBeast(this.props.title, this.props.description, this.props.imageUrl)
   };
 
   render() {
+     console.log(this.props);
     return (
       <section>
         <Card className="cards">
@@ -50,8 +36,6 @@ class Section extends React.Component {
             variant="top"
             onClick={() => {
               this.favorite()
-              this.addOne()
-              // this.props.handleShowModal(this.props.title)// HINT HINT~~~
               this.setSelectedBeast2();
               }
             }
@@ -60,21 +44,14 @@ class Section extends React.Component {
           />
           <Card.Body>
             <p>Keyword {this.props.keyword}</p>
-            <p>{this.props.horns} Horn(s)</p>
-            <p>{this.state.numberOnHand} Likes
+            <p>{this.props.horns} Horn(s)</p> 
+            <p>{this.state.likes} Likes
               {this.state.showFavorite ? '💖' : ''}</p>
             <p>{this.props.description}</p>
           </Card.Body>
-          {/* <Button variant="outline-success" onClick={this.addOne}>Add One</Button>
-          <Button variant="outline-danger" onClick={this.useOne}>Use One</Button> */}
         </Card>
       </section>
     )
   }
 }
-// title={item.title}
-//           imageURL={item.image_url}
-//           description={item.description}
-//           keyword={item.keyword}
-//           horns={item.horns}
 export default Section;
